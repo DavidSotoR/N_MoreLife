@@ -7,19 +7,88 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/btnEnviar"
-        android:text="Enviar Mensajes"
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="Onclick"
-        />
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btnAgregar"
-        android:text="Contactos"
+        <TextView
+            android:text="Tu ubicacion es:"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Long: "
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/longitud"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Lat: "
+                android:textSize="20sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/latitud"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/mensaje2"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/todo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:onClick="Onclick"/>
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btnEnviar"
+            android:text="Enviar Mensajes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Onclick" />
+
+        <Button
+            android:layout_marginTop="30dp"
+            android:layout_margin="10dp"
+            android:id="@+id/btnAgregar"
+            android:text="Contactos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="Onclick"/>
+
+    </LinearLayout>
+
 
 </LinearLayout>
