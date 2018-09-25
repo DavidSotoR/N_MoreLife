@@ -3,6 +3,7 @@ package morelife.example.user.n_morelife;
 import android.Manifest;
 import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -28,6 +29,8 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     //protected LocationManager locationManager;
     TextView longitud,direccion,latitud,enviado;
+    String tel1,tel2,tel3,tel4,tel5;
+    private IntentFilter filter;
 
 //
     @Override
@@ -39,6 +42,14 @@ public class MainActivity extends AppCompatActivity {
         direccion = (TextView) findViewById(R.id.mensaje2);
         latitud = (TextView) findViewById(R.id.latitud);
         enviado = findViewById(R.id.todo);
+        Intent intent = new Intent(this,Filtro.class);
+        startService(intent);
+        SharedPreferences preferences_in = getSharedPreferences("contactos",Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor_in = preferences_in.edit();
+        editor_in.putString("cont","0");
+        editor_in.apply();
+
+        init();
 
 
         if (ActivityCompat.checkSelfPermission(MainActivity.this, Manifest.permission.SEND_SMS)
@@ -59,6 +70,11 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    private void init() {
+        filter = new IntentFilter();
+        filter.addAction(Intent.ACTION_SCREEN_ON);
+    }
+
     public void Onclick(View view) {
         switch (view.getId()){
             case R.id.btnEnviar:
@@ -70,29 +86,29 @@ public class MainActivity extends AppCompatActivity {
                 String lat = latitud.getText().toString();
                 String dir = direccion.getText().toString();
 
-                String mensaje_enviado="Necesito ayuda Mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
+                String mensaje_enviado="Necesito ayuda mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
 
-                String tel1 = preferences.getString("tel1","");
-                String tel2 = preferences.getString("tel2","");
-                String tel3 = preferences.getString("tel3","");
-                String tel4 = preferences.getString("tel4","");
-                String tel5 = preferences.getString("tel5","");
+                 tel1 = preferences.getString("tel1","");
+                 tel2 = preferences.getString("tel2","");
+                 tel3 = preferences.getString("tel3","");
+                 tel4 = preferences.getString("tel4","");
+                 tel5 = preferences.getString("tel5","");
 
                /* */
 
                 enviado.setText(mensaje_enviado);
 
                 try{
-
-                    mensaje.Enviar(tel1,mensaje_enviado);
-                    mensaje.Enviar(tel2,mensaje_enviado);
-                    mensaje.Enviar(tel3,mensaje_enviado);
-                    mensaje.Enviar(tel4,mensaje_enviado);
-                    mensaje.Enviar(tel5,mensaje_enviado);
-                    Toast.makeText(getApplicationContext(),"Mensajes enviados",Toast.LENGTH_SHORT).show();
+                    Context context = this;
+                    mensaje.Enviar(context, tel1,mensaje_enviado);
+                    mensaje.Enviar(context, tel2,mensaje_enviado);
+                    mensaje.Enviar(context, tel3,mensaje_enviado);
+                    mensaje.Enviar(context, tel4,mensaje_enviado);
+                    mensaje.Enviar(context, tel5,mensaje_enviado);
+                    //Toast.makeText(getApplicationContext(),"Mensajes enviados",Toast.LENGTH_SHORT).show();
 
                 }catch (Exception e){
-                    Toast.makeText(getApplicationContext(),"Error al enviar",Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(),"Error al enviar",Toast.LENGTH_SHORT).show();
                     e.printStackTrace();
                 }
 
@@ -102,6 +118,28 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this,AgregarUsuarios.class);
                 startActivity(intent);
                 break;
+
+            case R.id.btnFalsaAlarma:
+                SharedPreferences preferencesf = getSharedPreferences("contactos", Context.MODE_PRIVATE);
+                EnviarMensaje mensajef = new EnviarMensaje();
+                 tel1 = preferencesf.getString("tel1","");
+                 tel2 = preferencesf.getString("tel2","");
+                 tel3 = preferencesf.getString("tel3","");
+                 tel4 = preferencesf.getString("tel4","");
+                 tel5 = preferencesf.getString("tel5","");
+                 try {
+                     mensajef.Enviar2(tel1,"Falsa Alarma");
+                     mensajef.Enviar2(tel2,"Falsa Alarma");
+                     mensajef.Enviar2(tel3,"Falsa Alarma");
+                     mensajef.Enviar2(tel4,"Falsa Alarma");
+                     mensajef.Enviar2(tel5,"Falsa Alarma");
+                     Toast.makeText(getApplicationContext(),"Mensajes Enviados",Toast.LENGTH_SHORT).show();
+
+                 }catch (Exception e){
+                  Toast.makeText(getApplicationContext(),"Error al enviar mensaje",Toast.LENGTH_SHORT).show();
+                 }
+                break;
+
         }
     }
 
@@ -147,8 +185,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-
     public class Localizacion implements LocationListener{
         MainActivity mainActivity;
         public MainActivity getMainActivity(){return mainActivity;}
@@ -164,6 +200,14 @@ public class MainActivity extends AppCompatActivity {
             String Text2 = ""+location.getLongitude();
             longitud.setText(Text2);
             latitud.setText(Text);
+            SharedPreferences preferences_l= getSharedPreferences("contactos",Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor_l=preferences_l.edit();
+            String la= ""+location.getLatitude();
+            String lo= ""+location.getLongitude();
+            editor_l.putString("latitude",la);
+            editor_l.putString("longitud",lo);
+            editor_l.apply();
+
             this.mainActivity.setLocation(location);
 
         }
@@ -186,13 +230,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onProviderEnabled(String s) {
-            longitud.setText("Gps Activado");
+            longitud.setText("Gps Localizando");
+            latitud.setText("Gps Localizando");
 
         }
 
         @Override
         public void onProviderDisabled(String s) {
             longitud.setText("Gps desactivado");
+            latitud.setText("Gps desactivado");
 
         }
     }
