@@ -20,6 +20,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
 
 import java.io.IOException;
 import java.util.List;
@@ -68,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String Long = longitud.getText().toString();
                 String lat = latitud.getText().toString();
-                String dir = direccion.getText().toString();
+                //String dir = direccion.getText().toString();
 
                 String mensaje_enviado="Necesito ayuda Mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
 
