@@ -15,7 +15,7 @@ public class Hilo extends AsyncTask<Void, Integer, Boolean> {
     @Override
     protected Boolean doInBackground(Void... voids) {
         Tiempo tiempo = new Tiempo();
-        for (int i = 1;i<=5;i++){
+        for (int i = 1;i<=10;i++){
             tiempo.UnSegundo();
         }
         return true;

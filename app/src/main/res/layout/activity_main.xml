@@ -8,100 +8,120 @@
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_weight="1"
+        android:layout_margin="20sp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
 
         <TextView
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:text="Tu ubicacion es:"
-            android:textSize="20sp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:textSize="20sp" />
 
         <LinearLayout
-            android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:orientation="vertical">
+
             <TextView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:text="Long: "
-                android:textSize="20sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:textSize="20sp" />
+
             <TextView
+                android:layout_weight="1"
                 android:id="@+id/longitud"
-                android:textSize="20sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
 
             <TextView
-                android:text="Lat: "
-                android:textSize="20sp"
+                android:layout_weight="1"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="Lat: "
+                android:textSize="20sp" />
+
             <TextView
+                android:layout_weight="1"
                 android:id="@+id/latitud"
-                android:textSize="20sp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/mensaje2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp" />
+
         </LinearLayout>
 
-        <TextView
-            android:id="@+id/mensaje2"
-            android:textSize="20sp"
+        <!--<LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:layout_weight=".20"
+            android:background="1412FF"
+            android:orientation="horizontal">
 
+
+        </LinearLayout>-->
+
+        <!--
         <TextView
             android:id="@+id/todo"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
+-->
 
     </LinearLayout>
 
     <LinearLayout
-        android:layout_weight="1"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_weight="1"
         android:orientation="vertical">
+
         <Button
-            android:layout_marginTop="30dp"
-            android:layout_margin="10dp"
             android:id="@+id/btnEnviar"
-            android:text="Enviar Mensajes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Onclick" />
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="Onclick"
+            android:text="Enviar Mensajes" />
 
         <Button
-            android:layout_marginTop="30dp"
-            android:layout_margin="10dp"
             android:id="@+id/btnAgregar"
-            android:text="Contactos"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Onclick"/>
-        <Button
-            android:layout_marginTop="30dp"
             android:layout_margin="10dp"
-            android:text="Informacion"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_marginTop="30dp"
+            android:onClick="Onclick"
+            android:text="Contactos" />
 
         <Button
-            android:layout_marginTop="30dp"
-            android:layout_margin="10dp"
-            android:id="@+id/btnFalsaAlarma"
-            android:text="FALSA ALARMA"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:onClick="Onclick"/>
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:text="Informacion" />
+
+        <Button
+            android:id="@+id/btnFalsaAlarma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            android:onClick="Onclick"
+            android:text="FALSA ALARMA" />
 
     </LinearLayout>
 

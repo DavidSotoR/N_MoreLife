@@ -1,9 +1,15 @@
 package morelife.example.user.n_morelife;
 
+import android.Manifest;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
+import android.util.Log;
 import android.widget.Toast;
 
 import java.util.Objects;
@@ -19,6 +25,7 @@ public class Receiver_Pantalla extends BroadcastReceiver {
         SharedPreferences.Editor editor = preferences.edit();
         String cont = preferences.getString("cont","");
         Hilo hilo = new Hilo(context);
+
 
 
         if (Objects.equals(intent.getAction(),Intent.ACTION_SCREEN_ON)){
@@ -42,6 +49,16 @@ public class Receiver_Pantalla extends BroadcastReceiver {
                 String lon = preferences.getString("longitud","");
                 String lan = preferences.getString("latitude","");
                 try {
+
+                    int permissionCheck = ContextCompat.checkSelfPermission(context, Manifest.permission.SEND_SMS);
+                    if (permissionCheck!= PackageManager.PERMISSION_GRANTED){
+                        Toast.makeText(context,"Nose tiene permiso para enviar SMS.",Toast.LENGTH_SHORT).show();
+                        //Abre el panel para dar los permisos necesarios para el envio de los mensajes en caso no no tenerlos.
+                        ActivityCompat.requestPermissions((Activity) context,new String[]{Manifest.permission.SEND_SMS},225);
+                    }else {
+                        Log.i("Mensaje","Se tiene permisos para enviar SMS");
+                    }
+
                     String mensaje = "Ayuda ubicacion http://maps.google.com/maps?f=q&q=("+lan+","+lon+") ";
                     EnviarMensaje enviarMensaje = new EnviarMensaje();
                     enviarMensaje.Enviar2(tel1,mensaje);

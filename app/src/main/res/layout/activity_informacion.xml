@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/colorFondo"
+    tools:context=".Informacion">
+
+    <TableLayout
+        android:layout_margin="10dp"
+        android:stretchColumns="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:text="@string/info_titulo"
+            android:textSize="20sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtIntro"
+            android:textSize="15sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras2"
+            android:text="@string/info_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtTema1"
+            android:text="@string/info_tema_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras"/>
+        <TextView
+            android:id="@+id/txtTema1_contenido"
+            android:text="@string/info_tema_1_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras2"/>
+
+        <TextView
+            android:id="@+id/txtTema2"
+            android:text="@string/info_tema_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras"/>
+
+        <TextView
+            android:id="@+id/txtTema2_contenido"
+            android:text="@string/info_tema_2_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras2"/>
+
+        <TextView
+            android:id="@+id/txtTema3"
+            android:text="@string/info_tema_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras"/>
+
+        <TextView
+            android:id="@+id/txtTema3_contenido"
+            android:text="@string/info_tema_3_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras2"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio"
+            android:text="@string/info_Directorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contenido"
+            android:text="@string/info_directorio_contenido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:fontFamily="@font/SFc"
+            android:textColor="@color/colorLetras2"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto1"
+            android:text="@string/info_directorio_contacto1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_Federales"
+            android:text="@string/info_directorio_EntidadesFederativas"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto2"
+            android:text="@string/info_directorio_contacto2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto3"
+            android:text="@string/info_directorio_contacto3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto4"
+            android:text="@string/info_directorio_contacto4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto5"
+            android:text="@string/info_directorio_contacto5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto6"
+            android:text="@string/info_directorio_contacto6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto7"
+            android:text="@string/info_directorio_contacto7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto8"
+            android:text="@string/info_directorio_contacto8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto9"
+            android:text="@string/info_directorio_contacto9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDirectorio_contacto10"
+            android:text="@string/info_directorio_contacto10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto11"
+            android:text="@string/info_directorio_contacto11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto12"
+            android:text="@string/info_directorio_contacto12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto13"
+            android:text="@string/info_directorio_contacto13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto14"
+            android:text="@string/info_directorio_contacto14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto15"
+            android:text="@string/info_directorio_contacto15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto16"
+            android:text="@string/info_directorio_contacto16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto17"
+            android:text="@string/info_directorio_contacto17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto18"
+            android:text="@string/info_directorio_contacto18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto19"
+            android:text="@string/info_directorio_contacto19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto20"
+            android:text="@string/info_directorio_contacto20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto21"
+            android:text="@string/info_directorio_contacto21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto22"
+            android:text="@string/info_directorio_contacto22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDirectorio_contacto23"
+            android:text="@string/info_directorio_contacto23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto24"
+            android:text="@string/info_directorio_contacto24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto25"
+            android:text="@string/info_directorio_contacto25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto26"
+            android:text="@string/info_directorio_contacto26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/txtDirectorio_contacto27"
+            android:text="@string/info_directorio_contacto27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto28"
+            android:text="@string/info_directorio_contacto28"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto29"
+            android:text="@string/info_directorio_contacto29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto30"
+            android:text="@string/info_directorio_contacto30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto31"
+            android:text="@string/info_directorio_contacto31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txtDirectorio_contacto32"
+            android:text="@string/info_directorio_contacto32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </TableLayout>
+
+</ScrollView>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="title_activity_informacion">Informacion</string>
+
+    <string name="info_titulo">Bienvenida a la app More life</string>
+
+    <string name="info_intro">
+        En éste apartado encontrarás información sobre el tema de “violencia” que puede ser de utilidad.\nAntes que nada, te sugerimos notificar a tus familiares y a los contactos que registraste desde el login, con la finalidad de que estén enterados de ésta app y su forma de proceder.\n
+    </string>
+
+    <string name="info_tema_1">¿Cómo proceder ante una agresión?</string>
+
+    <string name="info_tema_1_contenido">
+        1.	Procura mantener tu móvil cerca de ti en todo momento.\n
+        2.	Recuerda que presionando la tecla de volumen por 3 segundos, la alarma more life se activará notificando a los contactos y redes que hallas registrado.\n
+        3.	Analiza situaciones, si tu pareja comienza a levantar la voz, llega a casa en estado inconveniente, toma precauciones y notifica a tus familiares o amigos.\n
+        4.	Si está dentro de tus posibilidades, avandona el domicilio, huir no es cobardía.\n
+        5.	En caso de que las agresiones se estén presentando y no puedas notificar, grita lo más fuerte que puedas, una sugerencia es exclamar vocales, ejemplo: “aaaaaaaaaaaaaaaa”.\n
+        6.	Cuando una agresión está siendo suscitada, evita caer en las provocaciones del agresor, guarda silencio momentáneo ante los reclamos ya que eso aviva la discusión.\n
+    </string>
+
+    <string name="info_tema_2">¿Sabías que la violencia tiene diversas tipificaciones?, algunas de ellas son:</string>
+
+    <string name="info_tema_2_contenido">
+        1. Violencia emocional o psicológica\n
+        2. Violencia física\n
+        3. Violencia sexual\n
+        4. Violencia patrimonial\n
+        5. Violencia económica\n
+        6. Violencia institucional o negligencia\n
+        7. Violencia verbal\n
+        8. Violencia simbólica o cosificación\n
+        9. Violencia gineco-obstétrica\n
+        10. Violencia de abandono\n
+        11. Violencia pedagógica\n
+        12. Violencia por exclusión\n
+        13. Violencia de responsabilidad\n
+        14. Violencia de discriminación\n
+    </string>
+
+    <string name="info_tema_3">Las tipificaciones de la violencia pueden suscitarse en diversos ámbitos:</string>
+
+    <string name="info_tema_3_contenido">
+        1. Laboral\n
+        2. Escolar\n
+        3. Doméstico\n
+        4. Urbano\n
+        5. Institucional\n
+    </string>
+
+    <string name="info_Directorio">Directorio de Instituciones  de Apoyo.</string>
+
+    <string name="info_directorio_contenido">
+        La subsiguiente información fue obtenida de diversos medios entre los que se encuentran el Instituto Nacional de las Mujeres, quienes proporcionan los contactos de las instituciones encargadas de asistir a las mujeres en las diversas entidades Mexicanas.\n
+    </string>
+
+    <string name="info_directorio_contacto1">
+        A Nivel Nacional, en caso de agresiones o cualquier otro tipo de incidente puedes llamar a la línea de Ayuda “Origen”, la cual brinda atención psicológica, orientación legal, médica, gratuita y confidencial a nivel nacional.\n
+        \nLunes a Domingo de 8:00 am a 10:00 pm
+        \nTeléfono: 01 800 0 15 16 17
+        \nWhatsapp: 55 7334 8556
+        \nwww.origenac.org
+        \nCorreo: lineadeayudaorigen@origenac.org
+    </string>
+
+    <string name="info_directorio_EntidadesFederativas">\nTeléfonos por entidad Federativa</string>
+
+    <string name="info_directorio_contacto2">
+        AGUASCALIENTES
+        \nInstituto Aguascalentense de las Mujeres
+        \nTel. (449) 9102128. Ext. 3114
+    </string>
+
+
+    <string name="info_directorio_contacto3">
+        \nBAJA CALIFORNIA
+        \nInstituto de la Mujer para el Estado de Baja California
+        \nTels. (664) 608 0888 / (686) 558 6364
+    </string>
+
+    <string name="info_directorio_contacto4">
+        \nCAMPECHE
+        \nInstituto Estatal de la Mujer de Campeche
+        \nTels. 8112656 y 8116086
+    </string>
+
+    <string name="info_directorio_contacto5">
+        \nCHIAPAS
+        \nSecretaría para el desarrollo y empoderamiento de las mujeres
+        \nTel. (961) 6130442
+    </string>
+
+    <string name="info_directorio_contacto6">
+        \nCHIHUAHUA
+        \nInstituto de las Mujeres
+        \nTel. 01 (656) 637 55 87 Juárez
+    </string>
+
+    <string name="info_directorio_contacto7">
+        \nCOAHUILA
+        \nInstituto Coahuilense de las Mujeres
+        \nTel. 018444 104771, Fax. 104151, Directo. 122 445
+    </string>
+
+    <string name="info_directorio_contacto8">
+        \nCOLIMA
+        \nInstituto Colimense de las Mujeres
+        \nTel. 01312 314 43 57, Fax. 01312 316 20 73
+    </string>
+
+    <string name="info_directorio_contacto9">
+        \nDISTRITO FEDERAL
+        \nInstituto de las Mujeres del Distrito Federal
+        \Tel. 01 (55) 5512 2856 Fax. 5512 2762 Cel. 5554164607
+    </string>
+
+    <string name="info_directorio_contacto10">
+        \nDURANGO
+        \nInstituto de la Mujer Duranguense
+        \nTel. 137 46 00
+    </string>
+
+    <string name="info_directorio_contacto11">
+        \nESTADO DE MÉXICO
+        \nConsejo Estatal de la Mujer y Bienestar Social del Estado de México
+        \nTel. 01 722 213 89 15
+    </string>
+
+    <string name="info_directorio_contacto12">
+        \nGUANAJUATO
+        \nInstituto de la Mujer Guanajuatense
+        \nTels. y Fax. 01 (473) 733 5523 / 733 3259 / 733 2903
+    </string>
+
+    <string name="info_directorio_contacto13">
+        \nGUERRERO
+        \nSecretaría de la Mujer del Estado de Guerrero
+        \nTels. 01747 47 198 92 / 192 25 / 198 74 / 198 84 / 199 65
+    </string>
+
+    <string name="info_directorio_contacto14">
+        \nHIDALGO
+        \nInstituto Hidalguense de las Mujeres
+        \nTels. 01771 71 51635 / 89205
+    </string>
+
+    <string name="info_directorio_contacto15">
+        \nJALISCO
+        \nInstituto Jalisciense de las Mujeres
+        \nTels. 01(33) 3658-3170 / (33)3586-6150
+    </string>
+
+    <string name="info_directorio_contacto16">
+        \nMICHOACÁN
+        \nSecretaría de la Mujer de Michoacán
+        \nTel. (443)113-67-00
+    </string>
+
+    <string name="info_directorio_contacto17">
+        \nMORELOS
+        \nInstituto de la Mujer para el Estado de Morelos
+        \nTel./fax 017771730066 Línea de las Mujeres. 018009111515
+    </string>
+
+    <string name="info_directorio_contacto18">
+        \nNAYARIT
+        \nInstituto de la Mujer Nayarita
+        \nTels. 01311 217 0377 / 217 65 15
+    </string>
+
+    <string name="info_directorio_contacto19">
+        \nNUEVO LEÓN
+        \nAlternativas Pacíficas A.C.
+        \nTels. 8372-9694
+    </string>
+
+    <string name="info_directorio_contacto20">
+        \nOAXACA
+        \nInstituto de la Mujer Oaxaqueña
+        \nTels. 01951 51 52252 / 59386
+    </string>
+
+    <string name="info_directorio_contacto21">
+        \nPUEBLA
+        \nInstituto Poblano de las Mujeres
+        \nTels. 01222 309 0900 / 0904, 0902
+    </string>
+
+    <string name="info_directorio_contacto22">
+        \nQUERÉTARO
+        \nInstituto Queretano de la Mujer
+        \nTel. 01442 215 3404/53
+    </string>
+
+    <string name="info_directorio_contacto23">
+        \nQUINTANA ROO
+        \nInstituto Quintanarroense de la Mujer
+        \nTels. 01983 83 20718, 31323 / 01 800 500 95 59
+    </string>
+
+    <string name="info_directorio_contacto24">
+        \nSAN LUIS POTOSÍ
+        \nInstituto de las Mujeres del Estado de San Luis Potosí
+        \nTel. 01 444 144 2920 Ext. 118, 119
+    </string>
+
+    <string name="info_directorio_contacto25">
+        \nSINALOA
+        \nInstituto Sinaloense de las Mujeres
+        \nTels. 01 667 752 06 72, 752 06 76, 752 06 85, 752 06 86, 752 06 73
+    </string>
+
+    <string name="info_directorio_contacto26">
+        \nSONORA
+        \nInstituto Sonorense de la Mujer
+        \nTel. 01662 212 7914 0340 ext 20
+    </string>
+
+    <string name="info_directorio_contacto27">
+        \nTABASCO
+        \nInstituto Estatal de las Mujeres de Tabasco
+        \nTels. 01 993 - 316 64 88 / 316 68 13 ext 110
+    </string>
+
+    <string name="info_directorio_contacto28">
+        \nTAMAULIPAS
+        \nInstituto de la Mujer Tamaulipeca
+        \nTels. 01 (834) 110 27 52 / 11014.99 / 110 14 96 / 110 16.21
+    </string>
+
+    <string name="info_directorio_contacto29">
+        \nTLAXCALA
+        \nInstituto Estatal de la Mujer de Tlaxcala
+        \nTels. 01 246 46 110 74 / 111 63 / 112 59
+    </string>
+
+    <string name="info_directorio_contacto30">
+        \nVERACRUZ
+        \nInstituto Veracruzano de las Mujeres
+        \nTel. 01228 841 7410, Ext. 3369 y 3368 Fax. 841 7596
+    </string>
+
+    <string name="info_directorio_contacto31">
+        \nYUCATÁN
+        \nVivir con Dignidad, A.C.
+        \nTel. 01 (999) 928 22 66
+    </string>
+
+    <string name="info_directorio_contacto32">
+        \nZACATECAS
+        \nInstituto para las Mujeres Zacatecanas
+        \nTel. 01 492 92 24423, 92 42416 y 92 40892 Ext. 119 Fax. 107
+    </string>
+</resources>

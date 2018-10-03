@@ -43,7 +43,9 @@
         <receiver
             android:name=".Receiver_Pantalla"
             android:enabled="true"
-            android:exported="true"></receiver>
+            android:exported="true" />
+
+        <activity android:name=".Informacion"></activity>
     </application>
 
 </manifest>

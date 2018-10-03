@@ -15,6 +15,7 @@ import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.provider.Settings;
 import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         longitud = (TextView) findViewById(R.id.longitud);
         direccion = (TextView) findViewById(R.id.mensaje2);
         latitud = (TextView) findViewById(R.id.latitud);
-        enviado = findViewById(R.id.todo);
+        //enviado = findViewById(R.id.todo);
         Intent intent = new Intent(this,Filtro.class);
         startService(intent);
         SharedPreferences preferences_in = getSharedPreferences("contactos",Context.MODE_PRIVATE);
@@ -82,8 +83,8 @@ public class MainActivity extends AppCompatActivity {
                 SharedPreferences preferences = getSharedPreferences("contactos", Context.MODE_PRIVATE);
                 EnviarMensaje mensaje = new EnviarMensaje();
 
-                String Long = longitud.getText().toString();
-                String lat = latitud.getText().toString();
+                String Long = preferences.getString("longitud","");//longitud.getText().toString();
+                String lat = preferences.getString("latitude","");//latitud.getText().toString();
                 String dir = direccion.getText().toString();
 
                 String mensaje_enviado="Necesito ayuda mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
@@ -95,16 +96,27 @@ public class MainActivity extends AppCompatActivity {
                  tel5 = preferences.getString("tel5","");
 
                /* */
+                //enviado.setText(mensaje_enviado);
 
-                enviado.setText(mensaje_enviado);
+
 
                 try{
+
+                    int permissionCheck = ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS);
+                    if (permissionCheck!=PackageManager.PERMISSION_GRANTED){
+                        Toast.makeText(getApplicationContext(),"Nose tiene permiso para enviar SMS.",Toast.LENGTH_SHORT).show();
+                        //Abre el panel para dar los permisos necesarios para el envio de los mensajes en caso no no tenerlos.
+                        ActivityCompat.requestPermissions(MainActivity.this,new String[]{Manifest.permission.SEND_SMS},225);
+                    }else {
+                        Log.i("Mensaje","Se tiene permisos para enviar SMS");
+                    }
+
                     Context context = this;
                     mensaje.Enviar(context, tel1,mensaje_enviado);
-                    mensaje.Enviar(context, tel2,mensaje_enviado);
+                    /*mensaje.Enviar(context, tel2,mensaje_enviado);
                     mensaje.Enviar(context, tel3,mensaje_enviado);
                     mensaje.Enviar(context, tel4,mensaje_enviado);
-                    mensaje.Enviar(context, tel5,mensaje_enviado);
+                    mensaje.Enviar(context, tel5,mensaje_enviado);*/
                     //Toast.makeText(getApplicationContext(),"Mensajes enviados",Toast.LENGTH_SHORT).show();
 
                 }catch (Exception e){
