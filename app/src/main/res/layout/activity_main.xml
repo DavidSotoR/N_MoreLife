@@ -1,129 +1,172 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorFondo"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_margin="20sp"
+    <TableLayout
+        android:stretchColumns="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <TextView
-            android:gravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Tu ubicacion es:"
-            android:textSize="20sp" />
+        android:layout_height="wrap_content">
 
         <LinearLayout
+            android:layout_margin="20sp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Long: "
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_weight="1"
-                android:id="@+id/longitud"
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:text="Tu ubicacion es:"
+                android:fontFamily="@font/sfc"
                 android:textSize="20sp" />
 
-            <TextView
-                android:layout_weight="1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Lat: "
-                android:textSize="20sp" />
-
-            <TextView
-                android:layout_weight="1"
-                android:id="@+id/latitud"
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
+                android:layout_weight=".20"
+                android:orientation="vertical">
 
-            <TextView
-                android:layout_weight="1"
-                android:id="@+id/mensaje2"
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sfc"
+                    android:text="Long: "
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/longitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sfc"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lat: "
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sfc"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/latitud"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sfc"/>
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/mensaje2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/sfc"/>
+
+            </LinearLayout>
+
+            <!--<LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textSize="20sp" />
+                android:layout_weight=".20"
+                android:background="1412FF"
+                android:orientation="horizontal">
+
+
+            </LinearLayout>-->
+
+            <!--
+            <TextView
+                android:id="@+id/todo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+    -->
 
         </LinearLayout>
 
-        <!--<LinearLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight=".20"
-            android:background="1412FF"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnEnviar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:onClick="Onclick"
+                android:text="  Enviar Mensajes"
+                android:backgroundTint="@color/color_botones"
+                android:textColor="@color/colorLetras"
+                android:background="@drawable/forma_boton"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_flecha"
+                android:drawableLeft="@drawable/ic_enviar_alerta"/>
+
+            <Button
+                android:id="@+id/btnAgregar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:onClick="Onclick"
+                android:text="  Contactos"
+                android:backgroundTint="@color/color_botones"
+                android:textColor="@color/colorLetras"
+                android:background="@drawable/forma_boton"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_flecha"
+                android:drawableLeft="@drawable/ic_circulo_contactos"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:text="  Informacion"
+                android:id="@+id/btnInfo"
+                android:backgroundTint="@color/color_botones"
+                android:textColor="@color/colorLetras"
+                android:background="@drawable/forma_boton"
+                android:onClick="Onclick"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_flecha"
+                android:drawableLeft="@drawable/ic_informacion"/>
+
+            <Button
+                android:id="@+id/btnFalsaAlarma"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_marginTop="30dp"
+                android:onClick="Onclick"
+                android:text="  FALSA ALARMA"
+                android:backgroundTint="@color/color_botones"
+                android:textColor="@color/colorLetras"
+                android:background="@drawable/forma_boton"
+                android:layout_gravity="center"
+                android:drawableRight="@drawable/ic_flecha"
+                android:drawableLeft="@drawable/ic_falsa_alarma"/>
+
+        </LinearLayout>
 
 
-        </LinearLayout>-->
-
-        <!--
-        <TextView
-            android:id="@+id/todo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
--->
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <Button
-            android:id="@+id/btnEnviar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="30dp"
-            android:onClick="Onclick"
-            android:text="Enviar Mensajes" />
-
-        <Button
-            android:id="@+id/btnAgregar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="30dp"
-            android:onClick="Onclick"
-            android:text="Contactos" />
-
-        <Button
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="30dp"
-            android:text="Informacion" />
-
-        <Button
-            android:id="@+id/btnFalsaAlarma"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:layout_marginTop="30dp"
-            android:onClick="Onclick"
-            android:text="FALSA ALARMA" />
-
-    </LinearLayout>
+    </TableLayout>
 
 
-</LinearLayout>
+
+
+</ScrollView>

@@ -15,22 +15,20 @@
 
         <TextView
             android:id="@+id/txtTitulo"
-            android:text="@string/info_titulo"
-            android:textSize="20sp"
-            android:fontFamily="@font/SFc"
-            android:textColor="@color/colorLetras"
-            android:textAlignment="center"
+            android:textSize="19sp"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:text="@string/info_titulo"
+            android:fontFamily="@font/sfc" />
 
         <TextView
             android:id="@+id/txtIntro"
-            android:textSize="15sp"
-            android:fontFamily="@font/SFc"
-            android:textColor="@color/colorLetras2"
-            android:text="@string/info_intro"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sfc"
+            android:text="@string/info_intro"
+            android:textColor="@color/colorLetras2"
+            android:textSize="15sp" />
 
         <TextView
             android:id="@+id/txtTema1"
@@ -38,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
         <TextView
             android:id="@+id/txtTema1_contenido"
@@ -46,7 +44,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
 
         <TextView
@@ -55,7 +53,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
 
         <TextView
@@ -64,7 +62,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
 
         <TextView
@@ -73,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
 
         <TextView
@@ -82,7 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
 
         <TextView
@@ -91,7 +89,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
 
         <TextView
@@ -100,7 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="15sp"
-            android:fontFamily="@font/SFc"
+            android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
 
         <TextView

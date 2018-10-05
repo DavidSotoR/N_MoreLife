@@ -152,6 +152,11 @@ public class MainActivity extends AppCompatActivity {
                  }
                 break;
 
+            case R.id.btnInfo:
+                Intent intent_info = new Intent(MainActivity.this,Informacion.class);
+                startActivity(intent_info);
+                break;
+
         }
     }
 
