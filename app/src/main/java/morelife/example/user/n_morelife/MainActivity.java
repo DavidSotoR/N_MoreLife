@@ -1,6 +1,7 @@
 package morelife.example.user.n_morelife;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
@@ -32,17 +33,18 @@ public class MainActivity extends AppCompatActivity {
     TextView longitud,direccion,latitud,enviado;
     String tel1,tel2,tel3,tel4,tel5;
     private IntentFilter filter;
+    private Context context_gps;
 
 //
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         longitud = (TextView) findViewById(R.id.longitud);
-        direccion = (TextView) findViewById(R.id.mensaje2);
+        //direccion = (TextView) findViewById(R.id.mensaje2);
         latitud = (TextView) findViewById(R.id.latitud);
         //enviado = findViewById(R.id.todo);
+        context_gps = this;
         Intent intent = new Intent(this,Filtro.class);
         startService(intent);
         SharedPreferences preferences_in = getSharedPreferences("contactos",Context.MODE_PRIVATE);
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION,},1000);
 
-        }else {locationStart(); }
+        }else {locationStart(context_gps); }
 
     }
 
@@ -79,13 +81,23 @@ public class MainActivity extends AppCompatActivity {
     public void Onclick(View view) {
         switch (view.getId()){
             case R.id.btnEnviar:
+                int permissionCheck_gps = ContextCompat.checkSelfPermission(this,
+                        Manifest.permission.ACCESS_FINE_LOCATION);
 
+                if (permissionCheck_gps != PackageManager.PERMISSION_GRANTED){
+                    Log.i("Ubicacion","NO tiene permisos para Ubicacion");
+                    ActivityCompat.requestPermissions(this,
+                            new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                            1);
+                    } else {
+                        Log.i("Ubicacion","Se tiene permisos para Ubicacion");
+                    }
                 SharedPreferences preferences = getSharedPreferences("contactos", Context.MODE_PRIVATE);
                 EnviarMensaje mensaje = new EnviarMensaje();
 
                 String Long = preferences.getString("longitud","");//longitud.getText().toString();
                 String lat = preferences.getString("latitude","");//latitud.getText().toString();
-                String dir = direccion.getText().toString();
+                //String dir = direccion.getText().toString();
 
                 String mensaje_enviado="Necesito ayuda mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
 
@@ -98,10 +110,7 @@ public class MainActivity extends AppCompatActivity {
                /* */
                 //enviado.setText(mensaje_enviado);
 
-
-
                 try{
-
                     int permissionCheck = ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS);
                     if (permissionCheck!=PackageManager.PERMISSION_GRANTED){
                         Toast.makeText(getApplicationContext(),"Nose tiene permiso para enviar SMS.",Toast.LENGTH_SHORT).show();
@@ -160,10 +169,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void locationStart() {
-        LocationManager mlocationmanager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+    private void locationStart(Context context_gps) {
+        // <uses-feature android:name="android.hardware.location.gps" />
         Localizacion Local = new Localizacion();
         Local.setMainActivity(this);
+        LocationManager mlocationmanager = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+
         final Boolean gpsEnable = mlocationmanager.isProviderEnabled(LocationManager.GPS_PROVIDER);
         mlocationmanager.isProviderEnabled(LocationManager.GPS_PROVIDER);
 
@@ -176,30 +187,33 @@ public class MainActivity extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission
                 (this, Manifest.permission.ACCESS_COARSE_LOCATION)
                 != PackageManager.PERMISSION_GRANTED) {
+            Log.i("GPS","NO Se tiene permisos para GPS");
+
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION,},1000);
             return;
 
         }
+
         mlocationmanager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,0,0,Local);
         mlocationmanager.requestLocationUpdates(LocationManager.GPS_PROVIDER,0,0,Local);
-        longitud.setText("Localizacion agregada");
-        direccion.setText("");
+        //longitud.setText("Localizacion agregada");
+        //direccion.setText("");
     }
 
-    public void setLocation(Location location) {
+/*    public void setLocation(Location location) {
         if (location.getLatitude()!= 0.0 && location.getLongitude()!=0.0){
             try {
                 Geocoder geocoder = new Geocoder(this, Locale.getDefault());
                 List<Address> list = geocoder.getFromLocation(location.getLatitude(),location.getLongitude(),1);
                 if (!list.isEmpty()){
                     Address DirCalle = list.get(0);
-                    direccion.setText("Direccion: \n"+DirCalle.getAddressLine(0));
+                    //direccion.setText("Direccion: \n"+DirCalle.getAddressLine(0));
                 }
             }catch (IOException e){
                 e.printStackTrace();
             }
         }
-    }
+    }*/
 
 
     public class Localizacion implements LocationListener{
@@ -208,8 +222,11 @@ public class MainActivity extends AppCompatActivity {
 
         public void setMainActivity(MainActivity mainActivity) {this.mainActivity = mainActivity; }
 
+
         @Override
         public void onLocationChanged(Location location) {
+            //Prueba de permiso
+
             location.getLatitude();
             location.getLongitude();
 
@@ -225,7 +242,8 @@ public class MainActivity extends AppCompatActivity {
             editor_l.putString("longitud",lo);
             editor_l.apply();
 
-            this.mainActivity.setLocation(location);
+
+            //this.mainActivity.setLocation(location);
 
         }
 

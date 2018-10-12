@@ -11,7 +11,7 @@
         android:layout_margin="10dp"
         android:stretchColumns="1"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/txtTitulo"
@@ -19,7 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/info_titulo"
-            android:fontFamily="@font/sfc" />
+            android:fontFamily="@font/sfc"
+            android:textColor="@color/colorLetras"/>
 
         <TextView
             android:id="@+id/txtIntro"
@@ -28,7 +29,7 @@
             android:fontFamily="@font/sfc"
             android:text="@string/info_intro"
             android:textColor="@color/colorLetras2"
-            android:textSize="15sp" />
+            android:textSize="15sp"/>
 
         <TextView
             android:id="@+id/txtTema1"
@@ -38,7 +39,17 @@
             android:textSize="20sp"
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
+
+        <ImageButton
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:layout_gravity="center"
+            android:id="@+id/btnImage_max"
+            android:src="@drawable/ic_maximizar"
+            android:onClick="OnClick"/>
         <TextView
+            android:visibility="gone"
             android:id="@+id/txtTema1_contenido"
             android:text="@string/info_tema_1_contenido"
             android:layout_width="wrap_content"
@@ -46,6 +57,15 @@
             android:textSize="15sp"
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
+        <ImageButton
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/btnImage_min"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_minimizar"
+            android:onClick="OnClick"/>
 
         <TextView
             android:id="@+id/txtTema2"
@@ -56,7 +76,17 @@
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
 
+        <ImageButton
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/btnImage_max2"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_maximizar"
+            android:onClick="OnClick"/>
+
         <TextView
+            android:visibility="gone"
             android:id="@+id/txtTema2_contenido"
             android:text="@string/info_tema_2_contenido"
             android:layout_width="wrap_content"
@@ -64,6 +94,16 @@
             android:textSize="15sp"
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
+
+        <ImageButton
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/btnImage_min2"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_minimizar"
+            android:onClick="OnClick"/>
 
         <TextView
             android:id="@+id/txtTema3"
@@ -74,7 +114,17 @@
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras"/>
 
+        <ImageButton
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/btnImage_max3"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_maximizar"
+            android:onClick="OnClick"/>
+
         <TextView
+            android:visibility="gone"
             android:id="@+id/txtTema3_contenido"
             android:text="@string/info_tema_3_contenido"
             android:layout_width="wrap_content"
@@ -83,218 +133,733 @@
             android:fontFamily="@font/sfc"
             android:textColor="@color/colorLetras2"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio"
-            android:text="@string/info_Directorio"
+        <ImageButton
+            android:visibility="gone"
+            android:background="@null"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:id="@+id/btnImage_min3"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_minimizar"
+            android:onClick="OnClick"/>
+
+        <LinearLayout
+            android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras"/>
+            android:orientation="vertical"
+            android:layout_marginBottom="10dp">
 
-        <TextView
-            android:id="@+id/txtDirectorio_contenido"
-            android:text="@string/info_directorio_contenido"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="15sp"
-            android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras2"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio"
+                android:text="@string/info_Directorio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto1"
-            android:text="@string/info_directorio_contacto1"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contenido"
+                android:text="@string/info_directorio_contenido"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras2"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_Federales"
-            android:text="@string/info_directorio_EntidadesFederativas"
-            android:layout_height="wrap_content"
-            android:layout_width="wrap_content"/>
+            <TextView
+                android:text="TELEFONOS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto2"
-            android:text="@string/info_directorio_contacto2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" Nivel Nacional"
+                android:id="@+id/btnNivelNacional"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto3"
-            android:text="@string/info_directorio_contacto3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto1"
+                android:text="@string/info_directorio_contacto1"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto4"
-            android:text="@string/info_directorio_contacto4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_weight="1"
+                android:fontFamily="@font/sfc"
+                android:textSize="20sp"
+                android:textColor="@color/colorLetras"
+                android:id="@+id/txtDirectorio_Federales"
+                android:text="@string/info_directorio_EntidadesFederativas"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto5"
-            android:text="@string/info_directorio_contacto5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" AGUASCALIENTES"
+                android:id="@+id/btnContacto2"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto6"
-            android:text="@string/info_directorio_contacto6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto2"
+                android:text="@string/info_directorio_contacto2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto7"
-            android:text="@string/info_directorio_contacto7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" BAJA CALIFORNIA"
+                android:id="@+id/btnContacto3"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto8"
-            android:text="@string/info_directorio_contacto8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto3"
+                android:text="@string/info_directorio_contacto3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto9"
-            android:text="@string/info_directorio_contacto9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/txtDirectorio_contacto10"
-            android:text="@string/info_directorio_contacto10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" CAMPECHE"
+                android:id="@+id/btnContacto4"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto11"
-            android:text="@string/info_directorio_contacto11"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/txtDirectorio_contacto4"
+                android:text="@string/info_directorio_contacto4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto12"
-            android:text="@string/info_directorio_contacto12"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" CHIAPAS"
+                android:id="@+id/btnContacto5"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto13"
-            android:text="@string/info_directorio_contacto13"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto5"
+                android:text="@string/info_directorio_contacto5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto14"
-            android:text="@string/info_directorio_contacto14"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" CHIHUAHUA"
+                android:id="@+id/btnContacto6"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto15"
-            android:text="@string/info_directorio_contacto15"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto6"
+                android:text="@string/info_directorio_contacto6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto16"
-            android:text="@string/info_directorio_contacto16"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" COAHUILA"
+                android:id="@+id/btnContacto7"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto17"
-            android:text="@string/info_directorio_contacto17"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto7"
+                android:text="@string/info_directorio_contacto7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto18"
-            android:text="@string/info_directorio_contacto18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" COLIMA"
+                android:id="@+id/btnContacto8"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto19"
-            android:text="@string/info_directorio_contacto19"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto8"
+                android:text="@string/info_directorio_contacto8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto20"
-            android:text="@string/info_directorio_contacto20"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" DISTRITO FEDERAL"
+                android:id="@+id/btnContacto9"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto21"
-            android:text="@string/info_directorio_contacto21"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto9"
+                android:text="@string/info_directorio_contacto9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto22"
-            android:text="@string/info_directorio_contacto22"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/txtDirectorio_contacto23"
-            android:text="@string/info_directorio_contacto23"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" DURANGO"
+                android:id="@+id/btnContacto10"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto24"
-            android:text="@string/info_directorio_contacto24"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto10"
+                android:text="@string/info_directorio_contacto10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto25"
-            android:text="@string/info_directorio_contacto25"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" ESTADO DE MÉXICO"
+                android:id="@+id/btnContacto11"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto26"
-            android:text="@string/info_directorio_contacto26"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-        <TextView
-            android:id="@+id/txtDirectorio_contacto27"
-            android:text="@string/info_directorio_contacto27"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto11"
+                android:text="@string/info_directorio_contacto11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto28"
-            android:text="@string/info_directorio_contacto28"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" GUANAJUATO"
+                android:id="@+id/btnContacto12"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto29"
-            android:text="@string/info_directorio_contacto29"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto12"
+                android:text="@string/info_directorio_contacto12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto30"
-            android:text="@string/info_directorio_contacto30"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" GUERRERO"
+                android:id="@+id/btnContacto13"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto31"
-            android:text="@string/info_directorio_contacto31"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto13"
+                android:text="@string/info_directorio_contacto13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
 
-        <TextView
-            android:id="@+id/txtDirectorio_contacto32"
-            android:text="@string/info_directorio_contacto32"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            <Button
+                android:text=" HIDALGO"
+                android:id="@+id/btnContacto14"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto14"
+                android:text="@string/info_directorio_contacto14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" JALISCO"
+                android:id="@+id/btnContacto15"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto15"
+                android:text="@string/info_directorio_contacto15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" MICHOACÁN"
+                android:id="@+id/btnContacto16"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto16"
+                android:text="@string/info_directorio_contacto16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" MORELOS"
+                android:id="@+id/btnContacto17"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto17"
+                android:text="@string/info_directorio_contacto17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" NAYARIT"
+                android:id="@+id/btnContacto18"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto18"
+                android:text="@string/info_directorio_contacto18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" NUEVO LEÓN"
+                android:id="@+id/btnContacto19"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto19"
+                android:text="@string/info_directorio_contacto19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" OAXACA"
+                android:id="@+id/btnContacto20"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto20"
+                android:text="@string/info_directorio_contacto20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" PUEBLA"
+                android:id="@+id/btnContacto21"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto21"
+                android:text="@string/info_directorio_contacto21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" QUERÉTARO"
+                android:id="@+id/btnContacto22"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto22"
+                android:text="@string/info_directorio_contacto22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" QUINTANA ROO"
+                android:id="@+id/btnContacto23"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto23"
+                android:text="@string/info_directorio_contacto23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" SAN LUIS POTOSÍ"
+                android:id="@+id/btnContacto24"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto24"
+                android:text="@string/info_directorio_contacto24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" SINALOA"
+                android:id="@+id/btnContacto25"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto25"
+                android:text="@string/info_directorio_contacto25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" SONORA"
+                android:id="@+id/btnContacto26"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto26"
+                android:text="@string/info_directorio_contacto26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" TABASCO"
+                android:id="@+id/btnContacto27"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto27"
+                android:text="@string/info_directorio_contacto27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" TAMAULIPAS"
+                android:id="@+id/btnContacto28"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto28"
+                android:text="@string/info_directorio_contacto28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" TLAXCALA"
+                android:id="@+id/btnContacto29"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto29"
+                android:text="@string/info_directorio_contacto29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" VERACRUZ"
+                android:id="@+id/btnContacto30"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto30"
+                android:text="@string/info_directorio_contacto30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" YUCATÁN"
+                android:id="@+id/btnContacto31"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto31"
+                android:text="@string/info_directorio_contacto31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:text=" ZACATECAS"
+                android:id="@+id/btnContacto32"
+                android:textAlignment="textStart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#14CCCA"
+                android:textColor="#000000"
+                android:background="@drawable/forma_boton"
+                android:drawableRight="@drawable/ic_maxmin_prueba"
+                android:onClick="OnClick"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:visibility="gone"
+                android:layout_weight="1"
+                android:id="@+id/txtDirectorio_contacto32"
+                android:text="@string/info_directorio_contacto32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
 
     </TableLayout>
 
