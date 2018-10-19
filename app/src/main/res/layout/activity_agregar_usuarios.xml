@@ -4,45 +4,231 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/colorFondo"
     tools:context=".AgregarUsuarios">
 
-    <EditText
-        android:id="@+id/campoTel1"
-        android:hint="Telefono 1"
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-    <EditText
-        android:id="@+id/campoTel2"
-        android:hint="Telefono 2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-    <EditText
-        android:id="@+id/campoTel3"
-        android:hint="Telefono 3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-    <EditText
-        android:id="@+id/campoTel4"
-        android:hint="Telefono 4"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
-    <EditText
-        android:id="@+id/campoTel5"
-        android:hint="Telefono 5"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"/>
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/campoTel1"
+                android:hint="Telefono 1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@color/color_edittext"
+                android:inputType="phone"/>
+
+            <ImageButton
+                android:id="@+id/btnSaveC1"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+            <ImageButton
+                android:id="@+id/btnEraseC1"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/campoTel2"
+                android:hint="Telefono 2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:background="@color/color_edittext"/>
+
+            <ImageButton
+                android:id="@+id/btnSaveC2"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+            <ImageButton
+                android:id="@+id/btnEraseC2"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/campoTel3"
+                android:hint="Telefono 3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:background="@color/color_edittext"/>
+
+            <ImageButton
+                android:id="@+id/btnSaveC3"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+            <ImageButton
+                android:id="@+id/btnEraseC3"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/campoTel4"
+                android:hint="Telefono 4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:background="@color/color_edittext"/>
+
+            <ImageButton
+                android:id="@+id/btnSaveC4"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+            <ImageButton
+                android:id="@+id/btnEraseC4"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_weight="1"
+                android:id="@+id/campoTel5"
+                android:hint="Telefono 5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:inputType="number"
+                android:background="@color/color_edittext"/>
+
+            <ImageButton
+                android:id="@+id/btnSaveC5"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+            <ImageButton
+                android:id="@+id/btnEraseC5"
+                android:layout_margin="10dp"
+                android:background="@drawable/forma_boton"
+                android:src="@drawable/ic_action_erase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="Onclick_Agregar"/>
+
+        </LinearLayout>
+
+
+        <TextView
+            android:visibility="gone"
+            android:textColor="@color/colorAccent"
+            android:id="@+id/txtError_alerta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="Ingresa tu Nombre:"
+            android:textColor="@color/colorLetras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <EditText
+            android:hint="Tu primer nombre"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_edittext"/>
+
+
+    </LinearLayout>
+
 
     <LinearLayout
         android:layout_marginTop="40dp"
+        android:layout_weight="1.5"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent">
 
         <Button
+            android:layout_margin="5dp"
+            android:textColor="@color/colorLetras"
+            android:backgroundTint="@color/color_botones"
+            android:background="@drawable/forma_boton"
             android:id="@+id/btnGuardar"
             android:text="Guardar"
             android:layout_weight="1"
@@ -50,6 +236,10 @@
             android:layout_height="wrap_content"
             android:onClick="Onclick_Agregar"/>
         <Button
+            android:layout_margin="5dp"
+            android:textColor="@color/colorLetras"
+            android:backgroundTint="@color/color_botones"
+            android:background="@drawable/forma_boton"
             android:id="@+id/btnEliminar"
             android:text="Eliminar"
             android:layout_weight="1"
@@ -57,6 +247,10 @@
             android:layout_height="wrap_content"
             android:onClick="Onclick_Agregar"/>
         <Button
+            android:layout_margin="5dp"
+            android:textColor="@color/colorLetras"
+            android:backgroundTint="@color/color_botones"
+            android:background="@drawable/forma_boton"
             android:id="@+id/btnMostrar"
             android:text="Mostrar"
             android:layout_weight="1"

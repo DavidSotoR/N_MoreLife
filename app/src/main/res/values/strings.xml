@@ -1,3 +1,6 @@
 <resources>
     <string name="app_name">MoreLife</string>
+
+    <string name="error_contacto">#LOS CONTACTOS SOLO DEBE CONTENER 10 DIGITOS Y DEBEN SER NUMEROS</string>
+
 </resources>

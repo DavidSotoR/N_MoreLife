@@ -8,5 +8,6 @@
     <color name="colorLetras">#FFD8A0</color>
     <color name="colorLetras2">#57CC7C</color>
     <color name="color_botones">#fc7c2d</color>
+    <color name="color_edittext">#ffffff</color>
 
 </resources>

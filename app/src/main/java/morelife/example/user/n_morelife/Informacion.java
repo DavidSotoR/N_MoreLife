@@ -1,5 +1,6 @@
 package morelife.example.user.n_morelife;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class Informacion extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_informacion);
         info_Tema1 = findViewById(R.id.txtTema1_contenido);
         info_Tema2 = findViewById(R.id.txtTema2_contenido);

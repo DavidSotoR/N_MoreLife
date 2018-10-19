@@ -6,6 +6,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Criteria;
@@ -39,10 +40,12 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         setContentView(R.layout.activity_main);
-        longitud = (TextView) findViewById(R.id.longitud);
+        getSupportActionBar().hide();
+        //longitud = (TextView) findViewById(R.id.longitud);
         //direccion = (TextView) findViewById(R.id.mensaje2);
-        latitud = (TextView) findViewById(R.id.latitud);
+        //latitud = (TextView) findViewById(R.id.latitud);
         //enviado = findViewById(R.id.todo);
         context_gps = this;
         Intent intent = new Intent(this,Filtro.class);
@@ -69,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,new String[]{Manifest.permission.ACCESS_FINE_LOCATION,},1000);
 
-        }else {locationStart(context_gps); }
+        }else {locationStart(); }
 
     }
 
@@ -122,10 +125,10 @@ public class MainActivity extends AppCompatActivity {
 
                     Context context = this;
                     mensaje.Enviar(context, tel1,mensaje_enviado);
-                    /*mensaje.Enviar(context, tel2,mensaje_enviado);
+                    mensaje.Enviar(context, tel2,mensaje_enviado);
                     mensaje.Enviar(context, tel3,mensaje_enviado);
                     mensaje.Enviar(context, tel4,mensaje_enviado);
-                    mensaje.Enviar(context, tel5,mensaje_enviado);*/
+                    mensaje.Enviar(context, tel5,mensaje_enviado);
                     //Toast.makeText(getApplicationContext(),"Mensajes enviados",Toast.LENGTH_SHORT).show();
 
                 }catch (Exception e){
@@ -168,8 +171,8 @@ public class MainActivity extends AppCompatActivity {
 
         }
     }
-
-    private void locationStart(Context context_gps) {
+    //antes era private, si hay error ya sabes porque
+    public void locationStart() {
         // <uses-feature android:name="android.hardware.location.gps" />
         Localizacion Local = new Localizacion();
         Local.setMainActivity(this);
@@ -232,8 +235,8 @@ public class MainActivity extends AppCompatActivity {
 
             String Text = ""+location.getLatitude();
             String Text2 = ""+location.getLongitude();
-            longitud.setText(Text2);
-            latitud.setText(Text);
+            //longitud.setText(Text2);
+            //latitud.setText(Text);
             SharedPreferences preferences_l= getSharedPreferences("contactos",Context.MODE_PRIVATE);
             SharedPreferences.Editor editor_l=preferences_l.edit();
             String la= ""+location.getLatitude();
@@ -265,15 +268,15 @@ public class MainActivity extends AppCompatActivity {
 
         @Override
         public void onProviderEnabled(String s) {
-            longitud.setText("Gps Localizando");
-            latitud.setText("Gps Localizando");
+            //longitud.setText("Gps Localizando");
+            //latitud.setText("Gps Localizando");
 
         }
 
         @Override
         public void onProviderDisabled(String s) {
-            longitud.setText("Gps desactivado");
-            latitud.setText("Gps desactivado");
+            //longitud.setText("Gps desactivado");
+            //latitud.setText("Gps desactivado");
 
         }
     }

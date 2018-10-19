@@ -201,8 +201,8 @@
             <TextView
                 android:layout_weight="1"
                 android:fontFamily="@font/sfc"
-                android:textSize="20sp"
                 android:textColor="@color/colorLetras"
+                android:textSize="20sp"
                 android:id="@+id/txtDirectorio_Federales"
                 android:text="@string/info_directorio_EntidadesFederativas"
                 android:layout_height="wrap_content"
@@ -227,7 +227,9 @@
                 android:id="@+id/txtDirectorio_contacto2"
                 android:text="@string/info_directorio_contacto2"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" BAJA CALIFORNIA"
@@ -248,7 +250,9 @@
                 android:id="@+id/txtDirectorio_contacto3"
                 android:text="@string/info_directorio_contacto3"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" CAMPECHE"
@@ -268,7 +272,9 @@
                 android:id="@+id/txtDirectorio_contacto4"
                 android:text="@string/info_directorio_contacto4"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" CHIAPAS"
@@ -289,7 +295,9 @@
                 android:id="@+id/txtDirectorio_contacto5"
                 android:text="@string/info_directorio_contacto5"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" CHIHUAHUA"
@@ -310,7 +318,9 @@
                 android:id="@+id/txtDirectorio_contacto6"
                 android:text="@string/info_directorio_contacto6"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" COAHUILA"
@@ -331,7 +341,9 @@
                 android:id="@+id/txtDirectorio_contacto7"
                 android:text="@string/info_directorio_contacto7"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" COLIMA"
@@ -352,7 +364,9 @@
                 android:id="@+id/txtDirectorio_contacto8"
                 android:text="@string/info_directorio_contacto8"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" DISTRITO FEDERAL"
@@ -373,7 +387,9 @@
                 android:id="@+id/txtDirectorio_contacto9"
                 android:text="@string/info_directorio_contacto9"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" DURANGO"
@@ -394,7 +410,9 @@
                 android:id="@+id/txtDirectorio_contacto10"
                 android:text="@string/info_directorio_contacto10"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" ESTADO DE MÉXICO"
@@ -415,7 +433,9 @@
                 android:id="@+id/txtDirectorio_contacto11"
                 android:text="@string/info_directorio_contacto11"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" GUANAJUATO"
@@ -436,7 +456,9 @@
                 android:id="@+id/txtDirectorio_contacto12"
                 android:text="@string/info_directorio_contacto12"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" GUERRERO"
@@ -457,7 +479,9 @@
                 android:id="@+id/txtDirectorio_contacto13"
                 android:text="@string/info_directorio_contacto13"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" HIDALGO"
@@ -478,7 +502,9 @@
                 android:id="@+id/txtDirectorio_contacto14"
                 android:text="@string/info_directorio_contacto14"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" JALISCO"
@@ -499,7 +525,9 @@
                 android:id="@+id/txtDirectorio_contacto15"
                 android:text="@string/info_directorio_contacto15"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" MICHOACÁN"
@@ -520,7 +548,9 @@
                 android:id="@+id/txtDirectorio_contacto16"
                 android:text="@string/info_directorio_contacto16"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" MORELOS"
@@ -541,7 +571,9 @@
                 android:id="@+id/txtDirectorio_contacto17"
                 android:text="@string/info_directorio_contacto17"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" NAYARIT"
@@ -562,7 +594,9 @@
                 android:id="@+id/txtDirectorio_contacto18"
                 android:text="@string/info_directorio_contacto18"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" NUEVO LEÓN"
@@ -583,7 +617,9 @@
                 android:id="@+id/txtDirectorio_contacto19"
                 android:text="@string/info_directorio_contacto19"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" OAXACA"
@@ -604,7 +640,9 @@
                 android:id="@+id/txtDirectorio_contacto20"
                 android:text="@string/info_directorio_contacto20"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" PUEBLA"
@@ -625,7 +663,9 @@
                 android:id="@+id/txtDirectorio_contacto21"
                 android:text="@string/info_directorio_contacto21"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" QUERÉTARO"
@@ -646,7 +686,9 @@
                 android:id="@+id/txtDirectorio_contacto22"
                 android:text="@string/info_directorio_contacto22"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" QUINTANA ROO"
@@ -667,7 +709,9 @@
                 android:id="@+id/txtDirectorio_contacto23"
                 android:text="@string/info_directorio_contacto23"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" SAN LUIS POTOSÍ"
@@ -688,7 +732,9 @@
                 android:id="@+id/txtDirectorio_contacto24"
                 android:text="@string/info_directorio_contacto24"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" SINALOA"
@@ -709,7 +755,9 @@
                 android:id="@+id/txtDirectorio_contacto25"
                 android:text="@string/info_directorio_contacto25"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" SONORA"
@@ -730,7 +778,9 @@
                 android:id="@+id/txtDirectorio_contacto26"
                 android:text="@string/info_directorio_contacto26"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" TABASCO"
@@ -751,7 +801,9 @@
                 android:id="@+id/txtDirectorio_contacto27"
                 android:text="@string/info_directorio_contacto27"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" TAMAULIPAS"
@@ -772,7 +824,9 @@
                 android:id="@+id/txtDirectorio_contacto28"
                 android:text="@string/info_directorio_contacto28"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" TLAXCALA"
@@ -793,7 +847,9 @@
                 android:id="@+id/txtDirectorio_contacto29"
                 android:text="@string/info_directorio_contacto29"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" VERACRUZ"
@@ -814,7 +870,9 @@
                 android:id="@+id/txtDirectorio_contacto30"
                 android:text="@string/info_directorio_contacto30"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" YUCATÁN"
@@ -835,7 +893,9 @@
                 android:id="@+id/txtDirectorio_contacto31"
                 android:text="@string/info_directorio_contacto31"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
             <Button
                 android:text=" ZACATECAS"
@@ -857,7 +917,9 @@
                 android:text="@string/info_directorio_contacto32"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/sfc"
+                android:textColor="@color/colorLetras"/>
 
         </LinearLayout>
 
