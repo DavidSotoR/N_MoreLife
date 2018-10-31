@@ -12,7 +12,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class AgregarUsuarios extends AppCompatActivity {
-    EditText telefono1,telefono2,telefono3,telefono4,telefono5;
+    EditText telefono1,telefono2,telefono3,telefono4,telefono5,campoNombre;
     TextView error_tel1;
     private SharedPreferences preferences;
     private SharedPreferences.Editor editor;
@@ -22,6 +22,7 @@ public class AgregarUsuarios extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        getSupportActionBar().hide();
         setContentView(R.layout.activity_agregar_usuarios);
 
         telefono1 = findViewById(R.id.campoTel1);
@@ -29,6 +30,8 @@ public class AgregarUsuarios extends AppCompatActivity {
         telefono3 = findViewById(R.id.campoTel3);
         telefono4 = findViewById(R.id.campoTel4);
         telefono5 = findViewById(R.id.campoTel5);
+
+        campoNombre = findViewById(R.id.campoNombre);
 
         error_tel1 = findViewById(R.id.txtError_alerta);
 
@@ -38,6 +41,7 @@ public class AgregarUsuarios extends AppCompatActivity {
         telefono3.setText(crear_prefrences.getString("tel3",""));
         telefono4.setText(crear_prefrences.getString("tel4",""));
         telefono5.setText(crear_prefrences.getString("tel5",""));
+        campoNombre.setText(crear_prefrences.getString("NombreUsuario",""));
 
         preferences = getSharedPreferences("contactos",Context.MODE_PRIVATE);
         editor = preferences.edit();
@@ -48,35 +52,36 @@ public class AgregarUsuarios extends AppCompatActivity {
     public void Onclick_Agregar(View view) {
 
         switch (view.getId()){
-            case R.id.btnGuardar:
+            case R.id.btnMensajePrueba:
+                EnviarMensaje enviarMensaje_prueba = new EnviarMensaje();
+                String contacto1 = preferences.getString("tel1","");
+                String contacto2 = preferences.getString("tel2","");
+                String contacto3 = preferences.getString("tel3","");
+                String contacto4 = preferences.getString("tel4","");
+                String contacto5 = preferences.getString("tel5","");
+
+                enviarMensaje_prueba.Enviar2(contacto1,"Mensaje de prueba de la App Morelife.");
+                enviarMensaje_prueba.Enviar2(contacto2,"Mensaje de prueba de la App Morelife.");
+                enviarMensaje_prueba.Enviar2(contacto3,"Mensaje de prueba de la App Morelife.");
+                enviarMensaje_prueba.Enviar2(contacto4,"Mensaje de prueba de la App Morelife.");
+                enviarMensaje_prueba.Enviar2(contacto5,"Mensaje de prueba de la App Morelife.");
+
+                Toast.makeText(this,"Mensajes de Prueba Enviados",Toast.LENGTH_SHORT).show();
                 break;
 
-            case R.id.btnEliminar:
-                SharedPreferences preferences_el = getSharedPreferences("contactos",Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor_el = preferences_el.edit();
-                editor_el.putString("tel1","");
-                editor_el.putString("tel2","");
-                editor_el.putString("tel3","");
-                editor_el.putString("tel4","");
-                editor_el.putString("tel5","");
-                editor_el.apply();
-                Toast.makeText(getApplicationContext(),"Contactos Guardados",Toast.LENGTH_SHORT).show();
+            case R.id.btnGuardarNombre:
+                String NombreUsuario = campoNombre.getText().toString();
+                if (NombreUsuario.length()<15){
+                    editor.putString("NombreUsuario",NombreUsuario);
+                    editor.apply();
+                    Log.i("Usuario",""+NombreUsuario);
+                    Toast.makeText(this,"Nombre Guardado",Toast.LENGTH_SHORT).show();
+                }else {
+                    Toast.makeText(this,"*ERROR Nombre debe ser menor a 15 caracteres",Toast.LENGTH_SHORT).show();
+                }
+
                 break;
 
-            case R.id.btnMostrar:
-                SharedPreferences preferences_Mos = getSharedPreferences("contactos",Context.MODE_PRIVATE);
-                String tel1 = preferences_Mos.getString("tel1","");
-                String tel2 = preferences_Mos.getString("tel2","");
-                String tel3 = preferences_Mos.getString("tel3","");
-                String tel4 = preferences_Mos.getString("tel4","");
-                String tel5 = preferences_Mos.getString("tel5","");
-
-                telefono1.setText(tel1);
-                telefono2.setText(tel2);
-                telefono3.setText(tel3);
-                telefono4.setText(tel4);
-                telefono5.setText(tel5);
-                break;
 
             case R.id.btnSaveC1:
                 String tf1 = telefono1.getText().toString();
@@ -84,6 +89,7 @@ public class AgregarUsuarios extends AppCompatActivity {
                     error_tel1.setVisibility(View.GONE);
                     editor.putString("tel1",telefono1.getText().toString());
                     editor.apply();
+                    Toast.makeText(this,"Contacto 1 Guardado",Toast.LENGTH_SHORT).show();
                 }else {
                     error_tel1.setText(R.string.error_contacto);
                     error_tel1.setVisibility(View.VISIBLE);
@@ -103,6 +109,7 @@ public class AgregarUsuarios extends AppCompatActivity {
                     editor.putString("tel2",telefono2.getText().toString());
                     error_tel1.setVisibility(View.GONE);
                     editor.apply();
+                    Toast.makeText(this,"Contacto 2 Guardado",Toast.LENGTH_SHORT).show();
                 }else {
                     error_tel1.setText(R.string.error_contacto);
                     error_tel1.setVisibility(View.VISIBLE);
@@ -121,6 +128,7 @@ public class AgregarUsuarios extends AppCompatActivity {
                     editor.putString("tel3",telefono3.getText().toString());
                     error_tel1.setVisibility(View.GONE);
                     editor.apply();
+                    Toast.makeText(this,"Contacto 3 Guardado",Toast.LENGTH_SHORT).show();
                 }else {
                     error_tel1.setText(R.string.error_contacto);
                     error_tel1.setVisibility(View.VISIBLE);
@@ -139,6 +147,7 @@ public class AgregarUsuarios extends AppCompatActivity {
                     editor.putString("tel4",telefono4.getText().toString());
                     error_tel1.setVisibility(View.GONE);
                     editor.apply();
+                    Toast.makeText(this,"Contacto 4 Guardado",Toast.LENGTH_SHORT).show();
                 }else {
                     error_tel1.setText(R.string.error_contacto);
                     error_tel1.setVisibility(View.VISIBLE);
@@ -157,6 +166,7 @@ public class AgregarUsuarios extends AppCompatActivity {
                     editor.putString("tel5",telefono5.getText().toString());
                     error_tel1.setVisibility(View.GONE);
                     editor.apply();
+                    Toast.makeText(this,"Contacto 5 Guardado",Toast.LENGTH_SHORT).show();
                 }else {
                     error_tel1.setText(R.string.error_contacto);
                     error_tel1.setVisibility(View.VISIBLE);

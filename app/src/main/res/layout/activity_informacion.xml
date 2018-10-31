@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true"
-    android:background="@color/colorFondo"
+    android:background="@color/color_fondo2"
     tools:context=".Informacion">
 
     <TableLayout
@@ -20,7 +20,7 @@
             android:layout_height="wrap_content"
             android:text="@string/info_titulo"
             android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras"/>
+            android:textColor="@color/colorLetras3"/>
 
         <TextView
             android:id="@+id/txtIntro"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras"/>
+            android:textColor="@color/colorLetras3"/>
 
         <ImageButton
             android:background="@null"
@@ -74,7 +74,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras"/>
+            android:textColor="@color/colorLetras3"/>
 
         <ImageButton
             android:background="@null"
@@ -112,7 +112,7 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
             android:fontFamily="@font/sfc"
-            android:textColor="@color/colorLetras"/>
+            android:textColor="@color/colorLetras3"/>
 
         <ImageButton
             android:background="@null"
@@ -158,7 +158,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras3"/>
 
             <TextView
                 android:layout_weight="1"
@@ -176,7 +176,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras3"/>
 
             <Button
                 android:text=" Nivel Nacional"
@@ -184,7 +184,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -193,6 +193,7 @@
             <TextView
                 android:visibility="gone"
                 android:layout_weight="1"
+                android:textColor="@color/colorLetras2"
                 android:id="@+id/txtDirectorio_contacto1"
                 android:text="@string/info_directorio_contacto1"
                 android:layout_height="wrap_content"
@@ -201,7 +202,7 @@
             <TextView
                 android:layout_weight="1"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"
+                android:textColor="@color/colorLetras3"
                 android:textSize="20sp"
                 android:id="@+id/txtDirectorio_Federales"
                 android:text="@string/info_directorio_EntidadesFederativas"
@@ -214,7 +215,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -229,7 +230,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" BAJA CALIFORNIA"
@@ -237,7 +238,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -252,7 +253,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" CAMPECHE"
@@ -260,7 +261,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -274,7 +275,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" CHIAPAS"
@@ -282,7 +283,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -297,7 +298,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" CHIHUAHUA"
@@ -305,7 +306,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -320,7 +321,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" COAHUILA"
@@ -328,7 +329,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -343,7 +344,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" COLIMA"
@@ -351,7 +352,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -366,7 +367,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" DISTRITO FEDERAL"
@@ -374,7 +375,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -389,7 +390,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" DURANGO"
@@ -397,7 +398,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -412,7 +413,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" ESTADO DE MÉXICO"
@@ -420,7 +421,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -435,7 +436,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" GUANAJUATO"
@@ -443,7 +444,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -458,7 +459,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" GUERRERO"
@@ -466,7 +467,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -481,7 +482,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" HIDALGO"
@@ -489,7 +490,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -512,7 +513,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -527,7 +528,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" MICHOACÁN"
@@ -535,7 +536,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -550,7 +551,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" MORELOS"
@@ -558,7 +559,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -573,7 +574,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" NAYARIT"
@@ -581,7 +582,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -596,7 +597,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" NUEVO LEÓN"
@@ -604,7 +605,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -619,7 +620,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" OAXACA"
@@ -627,7 +628,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -642,7 +643,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" PUEBLA"
@@ -650,7 +651,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -665,7 +666,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" QUERÉTARO"
@@ -673,7 +674,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -688,7 +689,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" QUINTANA ROO"
@@ -696,7 +697,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -711,7 +712,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" SAN LUIS POTOSÍ"
@@ -719,7 +720,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -734,7 +735,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" SINALOA"
@@ -742,7 +743,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -757,7 +758,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" SONORA"
@@ -765,7 +766,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -780,7 +781,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" TABASCO"
@@ -788,7 +789,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -803,7 +804,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" TAMAULIPAS"
@@ -811,7 +812,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -826,7 +827,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" TLAXCALA"
@@ -834,7 +835,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -849,7 +850,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" VERACRUZ"
@@ -857,7 +858,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -872,7 +873,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" YUCATÁN"
@@ -880,7 +881,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -895,7 +896,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
             <Button
                 android:text=" ZACATECAS"
@@ -903,7 +904,7 @@
                 android:textAlignment="textStart"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:backgroundTint="#14CCCA"
+                android:backgroundTint="@color/color_btnNuevo"
                 android:textColor="#000000"
                 android:background="@drawable/forma_boton"
                 android:drawableRight="@drawable/ic_maxmin_prueba"
@@ -919,7 +920,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:fontFamily="@font/sfc"
-                android:textColor="@color/colorLetras"/>
+                android:textColor="@color/colorLetras2"/>
 
         </LinearLayout>
 

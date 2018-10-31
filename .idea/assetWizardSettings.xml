@@ -47,8 +47,9 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="C:\Users\user\Desktop\David\Icono_MoreLife.jpg" />
-                                      <entry key="outputName" value="ic_launcher_morelife2" />
+                                      <entry key="backgroundColor" value="000000" />
+                                      <entry key="imageAsset" value="C:\Users\user\Desktop\David\icono_nuevo.png" />
+                                      <entry key="outputName" value="ic_launcher_morelife2_n" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -58,7 +59,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputIconType" value="ACTIONBAR" />
+                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>
@@ -67,6 +68,11 @@
                 </map>
               </option>
             </PersistentState>
+          </value>
+        </entry>
+        <entry key="vectorWizard">
+          <value>
+            <PersistentState />
           </value>
         </entry>
       </map>

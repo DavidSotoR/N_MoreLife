@@ -101,8 +101,9 @@ public class MainActivity extends AppCompatActivity {
                 String Long = preferences.getString("longitud","");//longitud.getText().toString();
                 String lat = preferences.getString("latitude","");//latitud.getText().toString();
                 //String dir = direccion.getText().toString();
+                String nombre = preferences.getString("NombreUsuario","");
 
-                String mensaje_enviado="Necesito ayuda mi ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+") ";
+                String mensaje_enviado=nombre+" necesita ayuda ubicacion http://maps.google.com/maps?f=q&q=("+lat+","+Long+")";
 
                  tel1 = preferences.getString("tel1","");
                  tel2 = preferences.getString("tel2","");

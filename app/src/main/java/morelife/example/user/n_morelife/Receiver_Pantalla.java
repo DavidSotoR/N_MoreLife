@@ -83,8 +83,9 @@ public class Receiver_Pantalla extends BroadcastReceiver {
                     } else {
                         Log.i("Mensaje", "Se tiene permisos para enviar SMS");
                     }
+                    String nombre = preferences.getString("NombreUsuario","");
 
-                    String mensaje = "Ayuda ubicacion http://maps.google.com/maps?f=q&q=(" + lan + "," + lon + ") ";
+                    String mensaje = nombre+" necesita ayuda ubicacion http://maps.google.com/maps?f=q&q=(" + lan + "," + lon + ")";
                     EnviarMensaje enviarMensaje = new EnviarMensaje();
                     enviarMensaje.Enviar2(tel1, mensaje);
                     enviarMensaje.Enviar2(tel2, mensaje);

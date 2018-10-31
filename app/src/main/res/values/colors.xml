@@ -3,11 +3,35 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="colorAzulFondo">#1412FF</color>
+    <color name="colorAzulFondo">#4499FF</color>
     <color name="colorFondo">#7E4DB2</color>
-    <color name="colorLetras">#FFD8A0</color>
-    <color name="colorLetras2">#57CC7C</color>
+    <color name="colorLetras">#fc7c2d</color>
+    <color name="colorLetras2">#000000</color>
+
+    <color name="colorLetras3">#1412FF</color>
+
+    <color name="colorLetras4">#000000</color>
+
+    <color name="color_btnNuevo6">#B4BFB9</color>
+
     <color name="color_botones">#fc7c2d</color>
     <color name="color_edittext">#ffffff</color>
+
+
+    <color name="color_fondo2">#99896A</color>
+    <color name="color_fondo3">#7F7F7F</color>
+    <color name="color_nuevo1">#C714CC</color>
+    <color name="color_nuevo2">#FF8DCC</color>
+    <color name="color_nuevo3">#00FF40</color>
+    <color name="color_nuevo4">#3C9988</color>
+    <color name="color_nuevo5">#14CCAB</color>
+
+
+    <color name="color_btnNuevo">#299910</color>
+    <color name="color_btnNuevo2">#787F7B</color>
+    <color name="color_btnNuevo3">#F0FFF7</color>
+    <color name="color_btnNuevo4">#3C403E</color>
+    <color name="color_btnNuevo5">#D8E5DE</color>
+
 
 </resources>
